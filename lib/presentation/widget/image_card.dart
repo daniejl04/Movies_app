@@ -21,7 +21,7 @@ class MyImage extends StatelessWidget {
 
           return Container(
             width: size.width * 0.18,
-            height: size.height * 0.12,
+            height: size.height * 0.22,
             alignment: Alignment.center,
             child: const CircularProgressIndicator(),
           );

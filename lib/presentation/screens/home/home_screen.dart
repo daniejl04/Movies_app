@@ -126,7 +126,7 @@ class HomeScreen extends StatelessWidget {
                                         fontWeight: FontWeight.w600),
                                   ),
                                   SizedBox(
-                                    height: size.height * 0.34,
+                                    height: size.height * 0.36 ,
                                     child: ListView.builder(
                                       scrollDirection: Axis.horizontal,
                                       itemCount: state.nowPlayingMovies.length,

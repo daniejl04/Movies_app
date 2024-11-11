@@ -48,6 +48,12 @@ class MovieDetailsScreen extends StatelessWidget {
                         Navigator.of(context).pop();
                       },
                     ),
+                    IconButton(
+                      icon: const Icon(Icons.favorite_border, color: Colors.white),
+                      onPressed: () {
+                       
+                      },
+                    ),
                   ],
                 ),
               ),

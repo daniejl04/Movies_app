@@ -40,7 +40,7 @@ class CardsMovies extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
               ),
               SizedBox(
-                  height: 60,
+                  height: 10,
                   child: RatingBar.builder(
                     itemSize: 10,
                     initialRating: movie.voteAverage,
