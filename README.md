@@ -87,10 +87,10 @@ lib/
 **Clonar el repositorio:**
 
 bash
-Copy code
+
 ```
-git clone https://github.com/tu-usuariomovies_test_app.git
-cd movies_test_app
+git clone https://github.com/daniejl04/movies_app.git
+cd movies_app
 ```
 ### Configurar la clave API:
 
