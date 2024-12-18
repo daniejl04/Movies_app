@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
+import 'package:movies_test/config/config.dart';
 import 'package:movies_test/domain/domain.dart';
 import 'package:movies_test/domain/entities/movie.entity.dart';
 
@@ -20,13 +21,13 @@ class MoviesApi {
 
   String _getBaseUrl() {
     if (kIsWeb) {
-      return 'https://api.themoviedb.org/3'; 
+      return Envaironment.apiUrl; 
     }
 
     if (Platform.isAndroid) {
-      return 'https://api.themoviedb.org/3';
+      return Envaironment.apiUrl;
     } else if (Platform.isIOS) {
-      return 'https://api.themoviedb.org/3';
+      return Envaironment.apiUrl;
     } else {
       throw Exception('Plastform is not supported');
     }

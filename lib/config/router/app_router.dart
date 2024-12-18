@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:movies_test/domain/entities/movie.entity.dart';
+import 'package:movies_test/presentation/screens/login_register/login_screen.dart';
 import 'package:movies_test/presentation/screens/screens.dart';
 
 final _appRouterPublic = GoRouter(routes: [
   GoRoute(
+    path: '/home',
+    builder: (context, state) => const LoginScreen(),
+  ),
+    GoRoute(
     path: '/',
     builder: (context, state) => const HomeScreen(),
   ),
@@ -22,7 +27,7 @@ class RouterSimpleCubit extends Cubit<GoRouter> {
   RouterSimpleCubit() : super(_appRouterPublic);
 
   void goBack() {
-    state.pop('/');
+    state.pop('/home');
   }
 
   void goDetails(BuildContext context, Movie movie) {

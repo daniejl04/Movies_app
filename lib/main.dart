@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:movies_test/config/config.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-void main() {
+void main() async {
+
+  await Envaironment.initEnvaironments();
+
   runApp(const BlocsProvider());
 } 
 
